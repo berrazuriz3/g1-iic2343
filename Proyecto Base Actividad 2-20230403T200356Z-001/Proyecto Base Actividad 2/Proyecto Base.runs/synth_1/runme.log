@@ -1,0 +1,414 @@
+
+*** Running vivado
+    with args -log Basys3.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Basys3.tcl
+
+El sistema no puede encontrar la ruta especificada.
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source Basys3.tcl -notrace
+Command: synth_design -top Basys3 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16256 
+El sistema no puede encontrar la ruta especificada.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 949.430 ; gain = 233.895
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Basys3' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:15]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Reg.vhd:7' bound to instance 'inst_REG_A' of component 'Reg' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'Reg' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Reg.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'Reg' (1#1) [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Reg.vhd:17]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Reg.vhd:7' bound to instance 'inst_REG_B' of component 'Reg' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:123]
+INFO: [Synth 8-3491] module 'ALU' declared at 'C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/ALU.vhd:4' bound to instance 'inst_ALU' of component 'ALU' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/ALU.vhd:14]
+INFO: [Synth 8-3491] module 'Adder8' declared at 'C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Adder8.vhd:5' bound to instance 'Adder' of component 'Adder8' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/ALU.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'Adder8' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Adder8.vhd:13]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/FA.vhd:4' bound to instance 'inst_FA0' of component 'FA' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Adder8.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'FA' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/FA.vhd:12]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/HA.vhd:5' bound to instance 'inst_HA' of component 'HA' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/FA.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'HA' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/HA.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'HA' (2#1) [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/HA.vhd:12]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/HA.vhd:5' bound to instance 'inst_HA2' of component 'HA' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/FA.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'FA' (3#1) [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/FA.vhd:12]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/FA.vhd:4' bound to instance 'inst_FA1' of component 'FA' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Adder8.vhd:35]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/FA.vhd:4' bound to instance 'inst_FA2' of component 'FA' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Adder8.vhd:43]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/FA.vhd:4' bound to instance 'inst_FA3' of component 'FA' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Adder8.vhd:51]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/FA.vhd:4' bound to instance 'inst_FA4' of component 'FA' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Adder8.vhd:59]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/FA.vhd:4' bound to instance 'inst_FA5' of component 'FA' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Adder8.vhd:67]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/FA.vhd:4' bound to instance 'inst_FA6' of component 'FA' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Adder8.vhd:75]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/FA.vhd:4' bound to instance 'inst_FA7' of component 'FA' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Adder8.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'Adder8' (4#1) [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Adder8.vhd:13]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 16 wide and choice expression is 8 wide [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/ALU.vhd:78]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (5#1) [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/ALU.vhd:14]
+INFO: [Synth 8-3491] module 'Display_Controller' declared at 'C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Display_Controller.vhd:7' bound to instance 'inst_Display_Controller' of component 'Display_Controller' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'Display_Controller' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Display_Controller.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'Display_Controller' (6#1) [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Display_Controller.vhd:19]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:6' bound to instance 'inst_Debouncer0' of component 'Debouncer' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'Debouncer' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'Debouncer' (7#1) [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:12]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:6' bound to instance 'inst_Debouncer1' of component 'Debouncer' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:156]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:6' bound to instance 'inst_Debouncer2' of component 'Debouncer' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:157]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:6' bound to instance 'inst_Debouncer3' of component 'Debouncer' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:158]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:6' bound to instance 'inst_Debouncer4' of component 'Debouncer' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:159]
+INFO: [Synth 8-256] done synthesizing module 'Basys3' (8#1) [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:15]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port s[15]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port s[14]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port s[13]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port s[12]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port s[11]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port s[10]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port s[9]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port s[8]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port a[15]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port a[14]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port a[13]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port a[12]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port a[11]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port a[10]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port a[9]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port a[8]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port b[15]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port b[14]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port b[13]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port b[12]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port b[11]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port b[10]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port b[9]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port b[8]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[12]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[11]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[10]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[9]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[8]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[7]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[6]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[5]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[4]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[3]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[2]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[1]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1022.422 ; gain = 306.887
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1022.422 ; gain = 306.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1022.422 ; gain = 306.887
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1022.422 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/constrs_1/new/Basys3.xdc]
+Finished Parsing XDC File [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/constrs_1/new/Basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/constrs_1/new/Basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Basys3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Basys3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1113.152 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1113.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1113.152 ; gain = 397.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1113.152 ; gain = 397.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1113.152 ; gain = 397.617
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Reg.vhd:28]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1113.152 ; gain = 397.617
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 21    
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 11    
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Basys3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+Module Reg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module HA 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Display_Controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+Module Debouncer 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[12]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[11]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[10]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[9]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[8]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[7]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[6]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[5]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[4]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[3]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[2]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[1]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1113.152 ; gain = 397.617
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1113.152 ; gain = 397.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1113.152 ; gain = 397.617
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1119.086 ; gain = 403.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1133.848 ; gain = 418.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1133.848 ; gain = 418.312
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1133.848 ; gain = 418.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1133.848 ; gain = 418.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1133.848 ; gain = 418.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1133.848 ; gain = 418.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    13|
+|3     |LUT1   |     3|
+|4     |LUT2   |     9|
+|5     |LUT3   |    22|
+|6     |LUT4   |    17|
+|7     |LUT5   |    20|
+|8     |LUT6   |    60|
+|9     |FDRE   |    85|
+|10    |IBUF   |    20|
+|11    |OBUF   |    15|
+|12    |OBUFT  |    13|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------------+-------------------+------+
+|      |Instance                  |Module             |Cells |
++------+--------------------------+-------------------+------+
+|1     |top                       |                   |   278|
+|2     |  inst_Debouncer2         |Debouncer          |    28|
+|3     |  inst_Debouncer3         |Debouncer_0        |    28|
+|4     |  inst_Display_Controller |Display_Controller |    49|
+|5     |  inst_REG_A              |Reg                |    57|
+|6     |  inst_REG_B              |Reg_1              |    67|
++------+--------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1133.848 ; gain = 418.312
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 1133.848 ; gain = 327.582
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1133.848 ; gain = 418.312
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1145.918 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1145.918 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+49 Infos, 51 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1145.918 ; gain = 720.898
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1145.918 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.runs/synth_1/Basys3.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Basys3_utilization_synth.rpt -pb Basys3_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 14 17:52:55 2023...

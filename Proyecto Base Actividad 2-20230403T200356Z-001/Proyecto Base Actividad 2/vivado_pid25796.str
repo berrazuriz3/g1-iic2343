@@ -1,0 +1,939 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 25796
+License: Customer
+
+Current time: 	Fri Apr 14 18:26:25 CLST 2023
+Time zone: 	Chile Standard Time (America/Santiago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Available disk space: 7 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Users/borja/OneDrive/Escritorio/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	C:/Users/borja/OneDrive/Escritorio/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	borja
+User home directory: C:/Users/borja
+User working directory: C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2
+User country: 	ES
+User language: 	es
+User locale: 	es_ES
+
+RDI_BASEROOT: C:/Users/borja/OneDrive/Escritorio/Vivado
+HDI_APPROOT: C:/Users/borja/OneDrive/Escritorio/Vivado/2019.2
+RDI_DATADIR: C:/Users/borja/OneDrive/Escritorio/Vivado/2019.2/data
+RDI_BINDIR: C:/Users/borja/OneDrive/Escritorio/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/borja/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/borja/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/borja/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	C:/Users/borja/OneDrive/Escritorio/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/vivado.log
+Vivado journal file location: 	C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/vivado.jou
+Engine tmp dir: 	C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/.Xil/Vivado-25796-DESKTOP-011TMCA
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Users/borja/OneDrive/Escritorio/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: C:/Users/borja/OneDrive/Escritorio/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Users/borja/OneDrive/Escritorio/Vivado/2019.2
+XILINX_VIVADO: C:/Users/borja/OneDrive/Escritorio/Vivado/2019.2
+XILINX_VIVADO_HLS: C:/Users/borja/OneDrive/Escritorio/Vivado/2019.2
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 634 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 110 MB (+112704kb) [00:00:08]
+// [Engine Memory]: 611 MB (+489249kb) [00:00:08]
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\borja\Universidad\6to semestre\Arquitectura de computadores\Proyecto\Proyecto Base Actividad 2-20230403T200356Z-001\Proyecto Base Actividad 2\Proyecto Base.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2' 
+// HMemoryUtils.trashcanNow. Engine heap size: 727 MB. GUI used memory: 51 MB. Current time: 4/14/23, 6:26:27 PM CLST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 824 MB (+191616kb) [00:00:15]
+// WARNING: HEventQueue.dispatchEvent() is taking  3976 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Users/borja/OneDrive/Escritorio/Vivado/2019.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:09 . Memory (MB): peak = 897.309 ; gain = 249.012 
+// Project name: Proyecto Base; location: C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2; part: xc7a35tcpg236-1
+// [Engine Memory]: 871 MB (+5659kb) [00:00:19]
+dismissDialog("Open Project"); // bB (cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 890 MB. GUI used memory: 55 MB. Current time: 4/14/23, 6:26:42 PM CLST
+// Elapsed time: 27 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// Tcl Message: [Fri Apr 14 17:27:05 2023] Launched synth_1... Run output will be captured here: C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.runs/synth_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Failed: addNotify
+// Elapsed time: 21 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // aj (cr)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 216ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 624 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-690] width mismatch in assignment; target has 16 bits, source has 8 bits [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:90]. ]", 1, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\borja\Universidad\6to semestre\Arquitectura de computadores\Proyecto\Proyecto Base Actividad 2-20230403T200356Z-001\Proyecto Base Actividad 2\Proyecto Base.srcs\sources_1\new\Basys3.vhd;-;;-;16;-;line;-;90;-;;-;16;-;"); // ah (O, cr)
+// PAPropertyPanels.initPanels (Basys3.vhd) elapsed time: 0.2s
+// Elapsed time: 12 seconds
+selectCodeEditor("Basys3.vhd", 160, 54); // ch (w, cr)
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// al (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bB (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // al (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr 14 17:38:23 2023] Launched synth_1... Run output will be captured here: C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Failed: addNotify
+// Elapsed time: 26 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // aj (cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'a': port width = 8, actual width = 16 [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:133]. ]", 1, true); // ah (O, cr) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\borja\Universidad\6to semestre\Arquitectura de computadores\Proyecto\Proyecto Base Actividad 2-20230403T200356Z-001\Proyecto Base Actividad 2\Proyecto Base.srcs\sources_1\new\Basys3.vhd;-;;-;16;-;line;-;133;-;;-;16;-;"); // ah (O, cr)
+// [GUI Memory]: 116 MB (+567kb) [00:12:37]
+// Elapsed time: 10 seconds
+selectCodeEditor("Basys3.vhd", 245, 218); // ch (w, cr)
+// Elapsed time: 22 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'a': port width = 8, actual width = 16 [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:133]. ]", 1); // ah (O, cr)
+// Elapsed time: 84 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'a': port width = 8, actual width = 16 [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:133]. , [Synth 8-549] port width mismatch for port 'result': port width = 8, actual width = 16 [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:59]. ]", 3, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\borja\Universidad\6to semestre\Arquitectura de computadores\Proyecto\Proyecto Base Actividad 2-20230403T200356Z-001\Proyecto Base Actividad 2\Proyecto Base.srcs\sources_1\new\Basys3.vhd;-;;-;16;-;line;-;59;-;;-;16;-;"); // ah (O, cr)
+// Elapsed time: 333 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'a': port width = 8, actual width = 16 [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:133]. ]", 1, true); // ah (O, cr) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\borja\Universidad\6to semestre\Arquitectura de computadores\Proyecto\Proyecto Base Actividad 2-20230403T200356Z-001\Proyecto Base Actividad 2\Proyecto Base.srcs\sources_1\new\Basys3.vhd;-;;-;16;-;line;-;133;-;;-;16;-;"); // ah (O, cr)
+// Elapsed time: 19 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3(Behavioral) (Basys3.vhd)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3(Behavioral) (Basys3.vhd), inst_ALU : ALU(Behavioral) (ALU.vhd)]", 4, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3(Behavioral) (Basys3.vhd), inst_ALU : ALU(Behavioral) (ALU.vhd), Adder : Adder8(Behavioral) (Adder8.vhd)]", 5, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("ALU.vhd", 405, 98); // ch (w, cr)
+selectCodeEditor("ALU.vhd", 407, 116); // ch (w, cr)
+selectCodeEditor("ALU.vhd", 402, 220); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// al (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bB (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // al (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// Tcl Message: [Fri Apr 14 17:47:22 2023] Launched synth_1... Run output will be captured here: C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 14 seconds
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Failed: addNotify
+// Elapsed time: 25 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // aj (cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-690] width mismatch in assignment; target has 8 bits, source has 16 bits [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/ALU.vhd:33]. ]", 1, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\borja\Universidad\6to semestre\Arquitectura de computadores\Proyecto\Proyecto Base Actividad 2-20230403T200356Z-001\Proyecto Base Actividad 2\Proyecto Base.srcs\sources_1\new\ALU.vhd;-;;-;16;-;line;-;33;-;;-;16;-;"); // ah (O, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("ALU.vhd", 328, 242); // ch (w, cr)
+selectCodeEditor("ALU.vhd", 376, 226); // ch (w, cr)
+selectCodeEditor("ALU.vhd", 357, 199); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("ALU.vhd", 351, 219); // ch (w, cr)
+selectCodeEditor("ALU.vhd", 350, 286); // ch (w, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// al (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bB (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // al (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// Tcl Message: [Fri Apr 14 17:48:39 2023] Launched synth_1... Run output will be captured here: C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Failed: addNotify
+// Elapsed time: 25 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // aj (cr)
+// Elapsed time: 12 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'a': port width = 8, actual width = 16 [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/ALU.vhd:42]. ]", 1, true); // ah (O, cr) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\borja\Universidad\6to semestre\Arquitectura de computadores\Proyecto\Proyecto Base Actividad 2-20230403T200356Z-001\Proyecto Base Actividad 2\Proyecto Base.srcs\sources_1\new\ALU.vhd;-;;-;16;-;line;-;42;-;;-;16;-;"); // ah (O, cr)
+// Elapsed time: 25 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'a': port width = 8, actual width = 16 [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/ALU.vhd:42]. ]", 1); // ah (O, cr)
+// Elapsed time: 21 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'a': port width = 8, actual width = 16 [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/ALU.vhd:42]. , [Synth 8-549] port width mismatch for port 's': port width = 8, actual width = 16 [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/ALU.vhd:26]. ]", 3, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\borja\Universidad\6to semestre\Arquitectura de computadores\Proyecto\Proyecto Base Actividad 2-20230403T200356Z-001\Proyecto Base Actividad 2\Proyecto Base.srcs\sources_1\new\ALU.vhd;-;;-;16;-;line;-;26;-;;-;16;-;"); // ah (O, cr)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3(Behavioral) (Basys3.vhd), inst_ALU : ALU(Behavioral) (ALU.vhd), Adder : Adder8(Behavioral) (Adder8.vhd)]", 5, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3(Behavioral) (Basys3.vhd), inst_ALU : ALU(Behavioral) (ALU.vhd), Adder : Adder8(Behavioral) (Adder8.vhd), inst_FA2 : FA(Behavioral) (FA.vhd)]", 8, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("Adder8.vhd", 349, 113); // ch (w, cr)
+selectCodeEditor("Adder8.vhd", 347, 184); // ch (w, cr)
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// al (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bB (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // al (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Fri Apr 14 17:50:48 2023] Launched synth_1... Run output will be captured here: C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 123 MB (+936kb) [00:24:55]
+// aj (cr): Synthesis Failed: addNotify
+// Elapsed time: 37 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // aj (cr)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-285] failed synthesizing module 'ALU' [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/ALU.vhd:14]. ]", 2); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-690] width mismatch in assignment; target has 16 bits, source has 8 bits [C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/ALU.vhd:53]. ]", 1, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\borja\Universidad\6to semestre\Arquitectura de computadores\Proyecto\Proyecto Base Actividad 2-20230403T200356Z-001\Proyecto Base Actividad 2\Proyecto Base.srcs\sources_1\new\ALU.vhd;-;;-;16;-;line;-;53;-;;-;16;-;"); // ah (O, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("ALU.vhd", 242, 221); // ch (w, cr)
+selectCodeEditor("ALU.vhd", 187, 242); // ch (w, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// al (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bB (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // al (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// Tcl Message: [Fri Apr 14 17:52:08 2023] Launched synth_1... Run output will be captured here: C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 5 seconds
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Completed: addNotify
+// Elapsed time: 59 seconds
+dismissDialog("Synthesis Completed"); // aj (cr)
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g (aR, cr): TRUE
+// Elapsed time: 27 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3(Behavioral) (Basys3.vhd), inst_ALU : ALU(Behavioral) (ALU.vhd), Adder : Adder8(Behavioral) (Adder8.vhd)]", 5); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3(Behavioral) (Basys3.vhd), inst_ALU : ALU(Behavioral) (ALU.vhd)]", 4); // B (F, cr)
+// Elapsed time: 38 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU(Behavioral) (CPU.vhd)]", 11, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/CPU.vhd}}] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/CPU.vhd}} 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3(Behavioral) (Basys3.vhd), inst_REG_A : Reg(Behavioral) (Reg.vhd)]", 2, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3(Behavioral) (Basys3.vhd)]", 1, true); // B (F, cr) - Node
+// Elapsed time: 30 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// [GUI Memory]: 130 MB (+1596kb) [00:30:23]
+// Elapsed time: 93 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3(Behavioral) (Basys3.vhd), inst_REG_A : Reg(Behavioral) (Reg.vhd)]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3(Behavioral) (Basys3.vhd), inst_REG_A : Reg(Behavioral) (Reg.vhd)]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 891 MB. GUI used memory: 63 MB. Current time: 4/14/23, 6:56:44 PM CLST
+// Elapsed time: 13 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 11 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "MUX"); // ac (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 18 seconds
+dismissDialog("Add Sources"); // c (cr)
+// Tcl Message: close [ open {C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/MUX.vhd} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/MUX.vhd}} 
+// I (cr): Define Module: addNotify
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 0, (String) null, 0); // ab (O, I)
+// Elapsed time: 12 seconds
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "cero", 0, "Port Name", 0); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "cero ; in ; false ; 0 ; 0", 0, "false", 2); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "cero ; in ; true ; 0 ; 0", 0, "0", 3); // ab (O, I)
+// Elapsed time: 17 seconds
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "15", 0, "MSB", 3); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 1, (String) null, 0); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "uno", 1, "Port Name", 0); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "uno ; in ; false ; 0 ; 0", 1, "false", 2); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "uno ; in ; true ; 0 ; 0", 1, "0", 3); // ab (O, I)
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // E (f, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "15", 1, "MSB", 3); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 2, (String) null, 0); // ab (O, I)
+// Elapsed time: 41 seconds
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // E (f, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "rega_dataout", 2, "Port Name", 0); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 3, (String) null, 0); // ab (O, I)
+// Elapsed time: 18 seconds
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "sel_mux", 3, "Port Name", 0); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "sel_mux ; in ; false ; 0 ; 0", 3, "false", 2); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "rega_dataout ; in ; false ; 0 ; 0", 2, "false", 2); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "rega_dataout ; in ; false ; 0 ; 0", 2, "false", 2); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "sel_mux ; in ; true ; 0 ; 0", 3, "sel_mux", 0); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "sel_mux", 3, "Port Name", 0); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "rega_dataout", 2, "Port Name", 0); // ab (O, I)
+// Elapsed time: 11 seconds
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "regb_dataout", 3, "Port Name", 0); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "0", 2, "MSB", 3); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "rega_dataout ; in ; true ; 0 ; 0", 2, "0", 3); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "0", 3, "MSB", 3); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "15", 2, "MSB", 3); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "0", 3, "MSB", 3); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "regb_dataout ; in ; true ; 0 ; 0", 3, "0", 3); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "regb_dataout ; in ; true ; 0 ; 0", 3, "0", 3); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "15", 3, "MSB", 3); // ab (O, I)
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // E (f, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 4, (String) null, 0); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "sel_mux", 4, "Port Name", 0); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "sel_mux ; in ; false ; 0 ; 0", 4, "false", 2); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "sel_mux ; in ; true ; 0 ; 0", 4, "0", 3); // ab (O, I)
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // E (f, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "1", 4, "MSB", 3); // ab (O, I)
+// Elapsed time: 12 seconds
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 5, (String) null, 0); // ab (O, I)
+// Elapsed time: 22 seconds
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output", 5, "Port Name", 0); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output ; in ; false ; 0 ; 0", 5, "false", 2); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output ; in ; true ; 0 ; 0", 5, "0", 3); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "15", 5, "MSB", 3); // ab (O, I)
+// [GUI Memory]: 161 MB (+25757kb) [00:34:27]
+// Elapsed time: 13 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I (cr)
+// [GUI Memory]: 176 MB (+6434kb) [00:34:35]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUX(Behavioral) (MUX.vhd)]", 11, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUX(Behavioral) (MUX.vhd)]", 11, false, false, false, false, false, true); // B (F, cr) - Double Click
+// [GUI Memory]: 198 MB (+14359kb) [00:34:43]
+// Elapsed time: 131 seconds
+selectCodeEditor("MUX.vhd", 203, 221); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("MUX.vhd", 55, 284); // ch (w, cr)
+typeControlKey((HResource) null, "MUX.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 22 seconds
+selectCodeEditor("MUX.vhd", 124, 330); // ch (w, cr)
+selectCodeEditor("MUX.vhd", 118, 328); // ch (w, cr)
+selectCodeEditor("MUX.vhd", 151, 349); // ch (w, cr)
+// Elapsed time: 55 seconds
+selectCodeEditor("MUX.vhd", 151, 161); // ch (w, cr)
+selectCodeEditor("MUX.vhd", 239, 187); // ch (w, cr)
+selectCodeEditor("MUX.vhd", 316, 179); // ch (w, cr)
+// Elapsed time: 18 seconds
+selectCodeEditor("MUX.vhd", 338, 204); // ch (w, cr)
+// Elapsed time: 20 seconds
+selectCodeEditor("MUX.vhd", 312, 202); // ch (w, cr)
+selectCodeEditor("MUX.vhd", 360, 265); // ch (w, cr)
+selectCodeEditor("MUX.vhd", 129, 139); // ch (w, cr)
+selectCodeEditor("MUX.vhd", 134, 139); // ch (w, cr)
+selectCodeEditor("MUX.vhd", 205, 161); // ch (w, cr)
+selectCodeEditor("MUX.vhd", 303, 226); // ch (w, cr)
+selectCodeEditor("MUX.vhd", 293, 96); // ch (w, cr)
+selectCodeEditor("MUX.vhd", 488, 95); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("MUX.vhd", 313, 245); // ch (w, cr)
+selectCodeEditor("MUX.vhd", 131, 290); // ch (w, cr)
+// Elapsed time: 100 seconds
+selectCodeEditor("MUX.vhd", 239, 241); // ch (w, cr)
+// Elapsed time: 96 seconds
+selectCodeEditor("MUX.vhd", 3, 102); // ch (w, cr)
+// Elapsed time: 31 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 32 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 41 seconds
+selectCodeEditor("MUX.vhd", 198, 135); // ch (w, cr)
+selectCodeEditor("MUX.vhd", 139, 272); // ch (w, cr)
+selectCodeEditor("MUX.vhd", 138, 284); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3.vhd", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX.vhd", 3); // i (h, cr)
+selectCodeEditor("MUX.vhd", 75, 285); // ch (w, cr)
+typeControlKey((HResource) null, "MUX.vhd", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3.vhd", 1); // i (h, cr)
+selectCodeEditor("Basys3.vhd", 168, 336); // ch (w, cr)
+selectCodeEditor("Basys3.vhd", 172, 330); // ch (w, cr)
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "Basys3.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Basys3.vhd", 55, 199); // ch (w, cr)
+selectCodeEditor("Basys3.vhd", 31, 346); // ch (w, cr)
+selectCodeEditor("Basys3.vhd", 202, 349); // ch (w, cr)
+// Elapsed time: 236 seconds
+selectCodeEditor("Basys3.vhd", 84, 300); // ch (w, cr)
+// Elapsed time: 265 seconds
+selectCodeEditor("Basys3.vhd", 277, 301); // ch (w, cr)
+// Elapsed time: 64 seconds
+selectCodeEditor("Basys3.vhd", 182, 132); // ch (w, cr)
+// Elapsed time: 145 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX.vhd", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3.vhd", 1); // i (h, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 891 MB. GUI used memory: 70 MB. Current time: 4/14/23, 7:26:45 PM CLST
+// Elapsed time: 237 seconds
+selectCodeEditor("Basys3.vhd", 74, 242); // ch (w, cr)
+typeControlKey(null, null, 'z');
+selectCodeEditor("Basys3.vhd", 818, 237); // ch (w, cr)
+typeControlKey((HResource) null, "Basys3.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 14 seconds
+selectCodeEditor("Basys3.vhd", 70, 287); // ch (w, cr)
+selectCodeEditor("Basys3.vhd", 72, 309); // ch (w, cr)
+selectCodeEditor("Basys3.vhd", 102, 267); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 891 MB. GUI used memory: 61 MB. Current time: 4/14/23, 7:56:45 PM CLST
+// Elapsed time: 3075 seconds
+selectCodeEditor("Basys3.vhd", 3, 225); // ch (w, cr)
+// Elapsed time: 96 seconds
+selectCodeEditor("Basys3.vhd", 401, 265); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 32 seconds
+selectCodeEditor("Basys3.vhd", 121, 267); // ch (w, cr)
+selectCodeEditor("Basys3.vhd", 506, 262); // ch (w, cr)
+typeControlKey((HResource) null, "Basys3.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Basys3.vhd", 145, 288); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("Basys3.vhd", 344, 312); // ch (w, cr)
+// Elapsed time: 52 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3(Behavioral) (Basys3.vhd), inst_ALU : ALU(Behavioral) (ALU.vhd)]", 4, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3(Behavioral) (Basys3.vhd), inst_ALU : ALU(Behavioral) (ALU.vhd)]", 4, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Elapsed time: 38 seconds
+selectCodeEditor("ALU.vhd", 268, 260); // ch (w, cr)
+// Elapsed time: 27 seconds
+selectCodeEditor("ALU.vhd", 78, 261); // ch (w, cr)
+// Elapsed time: 30 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3.vhd", 1); // i (h, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 891 MB. GUI used memory: 61 MB. Current time: 4/14/23, 8:26:46 PM CLST
+// Elapsed time: 276 seconds
+selectCodeEditor("Basys3.vhd", 140, 161); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX.vhd", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3.vhd", 1); // i (h, cr)
+// Elapsed time: 55 seconds
+selectCodeEditor("Basys3.vhd", 44, 202); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("Basys3.vhd", 194, 180); // ch (w, cr)
+// Elapsed time: 55 seconds
+selectCodeEditor("Basys3.vhd", 73, 260); // ch (w, cr)
+typeControlKey((HResource) null, "Basys3.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("Basys3.vhd", 72, 261); // ch (w, cr)
+typeControlKey((HResource) null, "Basys3.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Basys3.vhd", 87, 202); // ch (w, cr)
+selectCodeEditor("Basys3.vhd", 176, 263); // ch (w, cr)
+// Elapsed time: 58 seconds
+selectCodeEditor("Basys3.vhd", 1, 74); // ch (w, cr)
+typeControlKey((HResource) null, "Basys3.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Basys3.vhd", 85, 74); // ch (w, cr)
+selectCodeEditor("Basys3.vhd", 87, 76); // ch (w, cr)
+// Elapsed time: 40 seconds
+selectCodeEditor("Basys3.vhd", 2, 76); // ch (w, cr)
+typeControlKey((HResource) null, "Basys3.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("Basys3.vhd", 7, 183); // ch (w, cr)
+selectCodeEditor("Basys3.vhd", 3, 182); // ch (w, cr)
+typeControlKey((HResource) null, "Basys3.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 20 seconds
+selectCodeEditor("Basys3.vhd", 124, 228); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("Basys3.vhd", 115, 288); // ch (w, cr)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 320 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "Status"); // ac (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 11 seconds
+dismissDialog("Add Sources"); // c (cr)
+// Tcl Message: close [ open {C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Status.vhd} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Status.vhd}} 
+// I (cr): Define Module: addNotify
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 0, (String) null, 0); // ab (O, I)
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // E (f, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "c", 0, "Port Name", 0); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 1, (String) null, 0); // ab (O, I)
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // E (f, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "z", 1, "Port Name", 0); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 2, (String) null, 0); // ab (O, I)
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // E (f, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "n", 2, "Port Name", 0); // ab (O, I)
+// Elapsed time: 36 seconds
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 3, (String) null, 0); // ab (O, I)
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // E (f, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "clear", 3, "Port Name", 0); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 4, (String) null, 0); // ab (O, I)
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // E (f, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "clock", 4, "Port Name", 0); // ab (O, I)
+// Elapsed time: 10 seconds
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 5, (String) null, 0); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "status", 5, "Port Name", 0); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "status ; in ; false ; 0 ; 0", 5, "false", 2); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "status ; in ; true ; 0 ; 0", 5, "in", 1); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "out", 5, "Direction", 1); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "status ; out ; true ; 0 ; 0", 5, "0", 3); // ab (O, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "2", 5, "MSB", 3); // ab (O, I)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Status(Behavioral) (Status.vhd)]", 14, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Status(Behavioral) (Status.vhd)]", 14, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("Status.vhd", 272, 120, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("Status.vhd", 43, 139); // ch (w, cr)
+selectCodeEditor("Status.vhd", 43, 139); // ch (w, cr)
+selectCodeEditor("Status.vhd", 27, 182); // ch (w, cr)
+selectCodeEditor("Status.vhd", 27, 182, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Status.vhd", 3, 287); // ch (w, cr)
+// Elapsed time: 22 seconds
+selectCodeEditor("Status.vhd", 152, 164); // ch (w, cr)
+// Elapsed time: 28 seconds
+selectCodeEditor("Status.vhd", 341, 221); // ch (w, cr)
+typeControlKey((HResource) null, "Status.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Status.vhd", 95, 221); // ch (w, cr)
+selectCodeEditor("Status.vhd", 819, 220); // ch (w, cr)
+selectCodeEditor("Status.vhd", 853, 225); // ch (w, cr)
+// Elapsed time: 44 seconds
+selectCodeEditor("Status.vhd", 62, 300); // ch (w, cr)
+typeControlKey((HResource) null, "Status.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Status.vhd", 143, 203); // ch (w, cr)
+// Elapsed time: 19 seconds
+selectCodeEditor("Status.vhd", 854, 269); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("Status.vhd", 656, 180); // ch (w, cr)
+selectCodeEditor("Status.vhd", 205, 286); // ch (w, cr)
+// Elapsed time: 59 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.vhd", 4); // i (h, cr)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX.vhd", 3); // i (h, cr)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3.vhd", 1); // i (h, cr)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Status.vhd", 5); // i (h, cr)
+selectCodeEditor("Status.vhd", 279, 28); // ch (w, cr)
+selectCodeEditor("Status.vhd", 107, 244); // ch (w, cr)
+typeControlKey((HResource) null, "Status.vhd", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3.vhd", 1); // i (h, cr)
+selectCodeEditor("Basys3.vhd", 160, 225); // ch (w, cr)
+typeControlKey((HResource) null, "Basys3.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Basys3.vhd", 52, 202); // ch (w, cr)
+selectCodeEditor("Basys3.vhd", 28, 284); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 891 MB. GUI used memory: 84 MB. Current time: 4/14/23, 8:56:48 PM CLST
+// Elapsed time: 963 seconds
+selectCodeEditor("Basys3.vhd", 68, 159); // ch (w, cr)
+selectCodeEditor("Basys3.vhd", 68, 159); // ch (w, cr)
+// Elapsed time: 300 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Status.vhd", 5); // i (h, cr)
+selectCodeEditor("Status.vhd", 110, 112); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3.vhd", 1); // i (h, cr)
+selectCodeEditor("Basys3.vhd", 107, 269); // ch (w, cr)
+// Elapsed time: 48 seconds
+selectCodeEditor("Basys3.vhd", 77, 257); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 891 MB. GUI used memory: 84 MB. Current time: 4/14/23, 9:26:49 PM CLST
+// WARNING: HEventQueue.dispatchEvent() is taking  2409795 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2415 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2409620 ms. Increasing delay to 7228860 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 891 MB. GUI used memory: 84 MB. Current time: 4/14/23, 10:22:37 PM CLST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2887 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1786 ms. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3247 ms. Increasing delay to 5000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 891 MB. GUI used memory: 77 MB. Current time: 4/14/23, 10:52:28 PM CLST
+// HMemoryUtils.trashcanNow. Engine heap size: 891 MB. GUI used memory: 77 MB. Current time: 4/14/23, 11:22:26 PM CLST
+// Elapsed time: 7994 seconds
+selectCodeEditor("Basys3.vhd", 105, 185); // ch (w, cr)
+// Elapsed time: 172 seconds
+selectCodeEditor("Basys3.vhd", 178, 198); // ch (w, cr)
+selectCodeEditor("Basys3.vhd", 199, 223); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("Basys3.vhd", 110, 201); // ch (w, cr)
+// Elapsed time: 68 seconds
+selectCodeEditor("Basys3.vhd", 59, 261); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("Basys3.vhd", 194, 218); // ch (w, cr)
+// Elapsed time: 165 seconds
+selectCodeEditor("Basys3.vhd", 82, 175); // ch (w, cr)
+selectCodeEditor("Basys3.vhd", 823, 120); // ch (w, cr)
+typeControlKey((HResource) null, "Basys3.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Basys3.vhd", 248, 206); // ch (w, cr)
+selectCodeEditor("Basys3.vhd", 229, 161); // ch (w, cr)
+// Elapsed time: 59 seconds
+selectCodeEditor("Basys3.vhd", 196, 136, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("Basys3.vhd", 193, 137); // ch (w, cr)
+// Elapsed time: 274 seconds
+selectCodeEditor("Basys3.vhd", 160, 201); // ch (w, cr)
+// Elapsed time: 41 seconds
+selectCodeEditor("Basys3.vhd", 233, 183); // ch (w, cr)
+// Elapsed time: 132 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 96 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "PC"); // ac (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 16 seconds
+dismissDialog("Add Sources"); // c (cr)
+// Tcl Message: close [ open {C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/PC.vhd} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// bB (cr):  Add Sources  : addNotify
+// Tcl Message: add_files {{C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/PC.vhd}} 
+// I (cr): Define Module: addNotify
+dismissDialog("Add Sources"); // bB (cr)
+// Elapsed time: 134 seconds
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 0, (String) null, 0); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "count_in", 0, "Port Name", 0); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "count_in ; in ; false ; 0 ; 0", 0, "false", 2); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "count_in ; in ; true ; 0 ; 0", 0, "0", 3); // ab (O, I)
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // E (f, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "11", 0, "MSB", 3); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 1, (String) null, 0); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "load_pc", 1, "Port Name", 0); // ab (O, I)
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // E (f, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 2, (String) null, 0); // ab (O, I)
+// Elapsed time: 33 seconds
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // E (f, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "clear", 2, "Port Name", 0); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 3, (String) null, 0); // ab (O, I)
+// Elapsed time: 100 seconds
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // E (f, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "up", 3, "Port Name", 0); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 4, (String) null, 0); // ab (O, I)
+// Elapsed time: 39 seconds
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // E (f, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "down", 4, "Port Name", 0); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 5, (String) null, 0); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output", 5, "Port Name", 0); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output ; in ; false ; 0 ; 0", 5, "in", 1); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "out", 5, "Direction", 1); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output ; out ; false ; 0 ; 0", 5, "false", 2); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output ; out ; true ; 0 ; 0", 5, "0", 3); // ab (O, I)
+// Elapsed time: 13 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "11", 5, "MSB", 3); // ab (O, I)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PC(Behavioral) (PC.vhd)]", 15, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PC(Behavioral) (PC.vhd)]", 15, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("PC.vhd", 72, 307); // ch (w, cr)
+typeControlKey((HResource) null, "PC.vhd", 'c'); // ch (w, cr)
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3.vhd", 1); // i (h, cr)
+selectCodeEditor("Basys3.vhd", 200, 161); // ch (w, cr)
+// Elapsed time: 13 seconds
+typeControlKey((HResource) null, "Basys3.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Basys3.vhd", 53, 203); // ch (w, cr)
+selectCodeEditor("Basys3.vhd", 29, 223); // ch (w, cr)
+selectCodeEditor("Basys3.vhd", 176, 231); // ch (w, cr)
+// Elapsed time: 18 seconds
+selectCodeEditor("Basys3.vhd", 81, 244); // ch (w, cr)
+// Elapsed time: 104 seconds
+typeControlKey((HResource) null, "Basys3.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Basys3.vhd", 219, 221); // ch (w, cr)
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PC.vhd", 6); // i (h, cr)
+selectCodeEditor("PC.vhd", 381, 302); // ch (w, cr)
+selectCodeEditor("PC.vhd", 101, 175); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("PC.vhd", 99, 182); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 891 MB. GUI used memory: 82 MB. Current time: 4/14/23, 11:52:27 PM CLST
+// Elapsed time: 39 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3.vhd", 1); // i (h, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("Basys3.vhd", 96, 199); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PC.vhd", 6); // i (h, cr)
+selectCodeEditor("PC.vhd", 321, 219); // ch (w, cr)
+typeControlKey((HResource) null, "PC.vhd", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3.vhd", 1); // i (h, cr)
+selectCodeEditor("Basys3.vhd", 110, 209); // ch (w, cr)
+typeControlKey((HResource) null, "Basys3.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 121 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 82 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PC.vhd", 6); // i (h, cr)
+// Elapsed time: 71 seconds
+selectCodeEditor("PC.vhd", 321, 280); // ch (w, cr)
+selectCodeEditor("PC.vhd", 4, 184); // ch (w, cr)
+selectCodeEditor("PC.vhd", 0, 95); // ch (w, cr)
+// Elapsed time: 188 seconds
+selectCodeEditor("PC.vhd", 300, 230); // ch (w, cr)
+typeControlKey((HResource) null, "PC.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("PC.vhd", 753, 262); // ch (w, cr)
+// Elapsed time: 61 seconds
+selectCodeEditor("PC.vhd", 40, 292); // ch (w, cr)
+typeControlKey((HResource) null, "PC.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("PC.vhd", 315, 330); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("PC.vhd", 194, 178); // ch (w, cr)
+// Elapsed time: 114 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 131 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3(Behavioral) (Basys3.vhd), inst_ALU : ALU(Behavioral) (ALU.vhd)]", 4); // B (F, cr)
+// Elapsed time: 38 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3.vhd", 1); // i (h, cr)
+// Elapsed time: 61 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PC.vhd", 6); // i (h, cr)
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Status.vhd", 5); // i (h, cr)
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2921 ms. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1036 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 891 MB. GUI used memory: 80 MB. Current time: 4/15/23, 12:22:28 AM CLST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 17 ms. Decreasing delay to 2017 ms.
+// Elapsed time: 980 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3.vhd", 1); // i (h, cr)
+// Elapsed time: 79 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX.vhd", 3); // i (h, cr)
+selectCodeEditor("MUX.vhd", 263, 143); // ch (w, cr)
