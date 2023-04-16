@@ -2,11 +2,11 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Fri Apr 14 17:52:11 2023
-# Process ID: 26468
-# Current directory: C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.runs/synth_1
+# Start of session at: Sun Apr 16 18:21:03 2023
+# Process ID: 10584
+# Current directory: C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.runs/synth_1
 # Command line: vivado.exe -log Basys3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Basys3.tcl
-# Log file: C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.runs/synth_1/Basys3.vds
-# Journal file: C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.runs/synth_1\vivado.jou
+# Log file: C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.runs/synth_1/Basys3.vds
+# Journal file: C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Basys3.tcl -notrace

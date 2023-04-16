@@ -1,5 +1,6 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
 entity Basys3 is
     Port (
@@ -35,6 +36,12 @@ component Display_Controller -- No Tocar
         an          : out   std_logic_vector (3 downto 0)
           );
     end component;
+    
+component Clock_Divider is
+    Port ( clk                  : in std_logic;
+           speed                : in std_logic_vector (1 downto 0);
+           clock                : out std_logic);
+end component Clock_Divider;
     
 component Reg -- No Tocar
     Port (
@@ -100,11 +107,22 @@ component ControlUnit is -- No Tocar
            w : out std_logic);
 end component ControlUnit;
 
+component ROM is
+    Port ( DataIn : in STD_LOGIC_VECTOR (35 downto 0);
+           address : in STD_LOGIC_VECTOR (11 downto 0);
+           write : in STD_LOGIC;
+           disable : in STD_LOGIC;
+           clock : in STD_LOGIC;
+           DataOut : out STD_LOGIC_VECTOR (35 downto 0));
+end component ROM;
+
 -- Fin de la declaración de los componentes.
 
 -- Inicio de la declaración de señales.
 
 signal d_btn            : std_logic_vector(4 downto 0);  -- Señales de botones con anti-rebote.
+  
+signal clock            :std_logic;
             
 signal dis_a            : std_logic_vector(3 downto 0);  -- Señales de salida al display A.    
 signal dis_b            : std_logic_vector(3 downto 0);  -- Señales de salida al display B.     
@@ -114,9 +132,15 @@ signal dis_d            : std_logic_vector(3 downto 0);  -- Señales de salida al
 signal c : std_logic;
 signal z : std_logic;
 signal n : std_logic;
+signal count_in :std_logic_vector (11 downto 0);
+signal clear    : std_logic;
      
 signal RAM_out        : std_logic_vector(15 downto 0); 
-signal ROM_out        : std_logic_vector(15 downto 0); 
+signal RAM_datain     : std_logic_vector(15 downto 0);
+signal ROM_out        : std_logic_vector(35 downto 0);
+signal ROM_address     : std_logic_vector(11 downto 0);
+signal ROM_datain     : std_logic_vector(35 downto 0);
+signal write_ROM      : std_logic; 
 signal s_status_out        : std_logic_vector(2 downto 0);
 signal a                : std_logic_vector(15 downto 0);  -- Señales del primer operador.    
 signal b                : std_logic_vector(15 downto 0);  -- Señales del segundo operador.
@@ -126,6 +150,7 @@ signal outmux_b              : std_logic_vector(15 downto 0);
 
 signal sel_A            : std_logic_vector(1 downto 0);
 signal sel_B            : std_logic_vector(1 downto 0);
+signal loadPC           : std_logic;
 signal enable_A         : std_logic;
 signal enable_B         : std_logic;
 signal sel_ALU          : std_logic_vector(2 downto 0);
@@ -165,9 +190,15 @@ with btn(0) select
 
 -- Inicio de declaración de instancias.
 
+inst_Clock_Divider: Clock_Divider port map(
+    speed       => "10",                    -- Selector de velocidad: "00" full, "01" fast, "10" normal y "11" slow. 
+    clk         => clk,                     -- No Tocar - Entrada de la señal del clock completo (100Mhz).
+    clock       => clock                    -- No Tocar - Salida de la señal del clock reducido: 25Mhz, 8hz, 2hz y 0.5hz.
+    );
+
 inst_REG_A: Reg port map( -- Repárame!
-    clock       => d_btn(2),
-    clear       => '0',
+    clock       => clock,
+    clear       => clear,
     load        => '1',
     up          => '0',
     down        => '0',
@@ -176,8 +207,8 @@ inst_REG_A: Reg port map( -- Repárame!
     );
     
 inst_REG_B: Reg port map( -- Repárame!
-    clock       => d_btn(3),
-    clear       => '0',
+    clock       => clock,
+    clear       => clear,
     load        => '1',
     up          => '0',
     down        => '0',
@@ -219,7 +250,7 @@ inst_MUX_B: MUX port map(
     cero => "0000000000000000",
     uno => "0000000000000001",
     reg_dataout => b,
-    lit => ROM_out,
+    lit => ROM_out(35 downto 20),
     sel_mux => sel_A,
     output => outmux_a
     );
@@ -228,31 +259,41 @@ inst_Status: Status port map(
     C => c,
     Z => z,
     N => n,
-    clear => '0',
-    clock => d_btn(3),
+    clear => clear,
+    clock => clock,
     status_out => s_status_out
     );
     
 inst_PC: PC port map(
-    clock       => d_btn(3),
-    count_in    => muxer_pc,
-    loadPC      => load_PC,
+    clock       => clock,
+    count_in    => ROM_out(31 downto 20),
+    load_pc      => loadPC,
     up          => '1',
     down        => '0',
     clear       => clear,
-    output      => outPC
+    output      => ROM_address
     );
 
 inst_ControlUnit: ControlUnit port map( 
-    ROM_dataout  => rom_dataout(19 downto 0),
+    ROM_dataout  => ROM_out(19 downto 0),
     CZN          => s_status_out,
     enableA      => enable_A,
     enableB      => enable_B,
     selA         => sel_A,
     selB         => sel_B,
-    loadPC       => load_PC,
+    loadPC       => loadPC,
     selALU       => sel_ALU
     );
+    
+inst_ROM: ROM port map(
+    clock         => clock,
+    disable     => clear,
+    write       => write_rom,
+    address     => ROM_address,
+    dataout     => ROM_out,
+    DataIn      => ROM_datain
+    );
+    
 
 -- No Tocar - Intancias de Debouncers.    
 inst_Debouncer0: Debouncer port map( clk => clk, signal_in => btn(0), signal_out => d_btn(0) );

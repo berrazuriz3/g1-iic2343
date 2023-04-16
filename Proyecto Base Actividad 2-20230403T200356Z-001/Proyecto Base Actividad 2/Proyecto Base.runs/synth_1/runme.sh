@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.runs/synth_1'
+HD_PWD='C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
