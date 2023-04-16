@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="C:/Users/borja/Universidad/6to semestre/Arquitectura de computadores/Proyecto/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.xpr">
+<Project Version="7" Minor="44" Path="C:/Users/56999/Documents/Universidad/2023-1/Arqui/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="a35b2fba0be742e6ac0032a12eca4df6"/>
@@ -61,6 +61,12 @@
         </FileInfo>
       </File>
       <File Path="$PPRDIR/../Componentes/Adder8.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../Proyecto Borja/proyecto-grupo-35/Proyecto Base/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/ControlUnit.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>

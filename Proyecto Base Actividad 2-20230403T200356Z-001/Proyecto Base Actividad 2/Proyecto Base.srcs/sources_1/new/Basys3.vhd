@@ -88,6 +88,18 @@ component PC is
            output : out STD_LOGIC_VECTOR (11 downto 0));
 end component PC;
 
+component ControlUnit is -- No Tocar
+    Port (ROM_dataout : in std_logic_vector (19 downto 0);
+           CZN : in std_logic_vector (2 downto 0);
+           enableA : out std_logic;
+           enableB : out std_logic;
+           selA : out std_logic_vector (1 downto 0);
+           selB : out std_logic_vector (1 downto 0);
+           loadPC : out std_logic;
+           selALU : out std_logic_vector (2 downto 0);
+           w : out std_logic);
+end component ControlUnit;
+
 -- Fin de la declaración de los componentes.
 
 -- Inicio de la declaración de señales.
@@ -231,13 +243,27 @@ inst_PC: PC port map(
     output      => outPC
     );
 
+inst_ControlUnit: ControlUnit port map( 
+    ROM_dataout  => rom_dataout(19 downto 0),
+    CZN          => s_status_out,
+    enableA      => enable_A,
+    enableB      => enable_B,
+    selA         => sel_A,
+    selB         => sel_B,
+    loadPC       => load_PC,
+    selALU       => sel_ALU
+    );
+
 -- No Tocar - Intancias de Debouncers.    
 inst_Debouncer0: Debouncer port map( clk => clk, signal_in => btn(0), signal_out => d_btn(0) );
 inst_Debouncer1: Debouncer port map( clk => clk, signal_in => btn(1), signal_out => d_btn(1) );
 inst_Debouncer2: Debouncer port map( clk => clk, signal_in => btn(2), signal_out => d_btn(2) );
 inst_Debouncer3: Debouncer port map( clk => clk, signal_in => btn(3), signal_out => d_btn(3) );
 inst_Debouncer4: Debouncer port map( clk => clk, signal_in => btn(4), signal_out => d_btn(4) );
-    
+
+
+
+
 -- Fin de declaración de instancias.
 
 -- Fin de declaración de comportamientos.
