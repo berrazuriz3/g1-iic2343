@@ -155,8 +155,6 @@ signal enable_A         : std_logic;
 signal enable_B         : std_logic;
 signal sel_ALU          : std_logic_vector(2 downto 0);
 signal result           : std_logic_vector(15 downto 0);  -- Señales del resultado.
-signal dataout_reg_a    : std_logic_vector(15 downto 0);  -- Señales del primer operador.    
-signal dataout_reg_b    : std_logic_vector(15 downto 0);  -- Señales del segundo operador.
 signal dis              : std_logic_vector(15 downto 0);
 
 signal datain           : std_logic_vector(15 downto 0);  -- Señales de datos de entrada a los registros.
@@ -174,21 +172,21 @@ begin
               --sw(15 downto 0)    when others;
 
 -- Muxers del Display
-with sel_ALU select
-    dis_a <= "0000"      when "000",
-             "0001"             when others;
+--with sel_ALU select
+    --dis_a <= "0000"      when "000",
+             --"0001"             when others;
                      
-with enable_B select
-    dis_b <= "0000"      when '0',
-             "0001"             when others;
+--with enable_B select
+    --dis_b <= "0000"      when '0',
+             --"0001"             when others;
 
-with enable_A select
-    dis_c <= "0001"      when '1',
-             "0000" when others;
+--with enable_A select
+    --dis_c <= "0001"      when '1',
+             --"0000" when others;
                 
-with loadPC select
-    dis_d <= "0000"      when '0',
-             "0001" when others;
+--with loadPC select
+    --dis_d <= "0000"      when '0',
+             --"0001" when others;
 
 dis(15 downto 8) <= a(7 downto 0);
 dis(7 downto 0) <= b(7 downto 0);
@@ -236,7 +234,7 @@ inst_REG_B: Reg port map( -- Repárame!
     result      => result
     );
 
--- Intancia de Display_Controller.        
+-- Intancia de aDisplay_Controller.        
 inst_Display_Controller: Display_Controller port map(
     dis_a => dis_a, 
     dis_b => dis_b, 
@@ -258,8 +256,8 @@ inst_MUX_A: MUX port map(
     
 inst_MUX_B: MUX port map(
     cero => "0000000000000000",
-    uno => "0000000000000001",
-    reg_dataout => b,
+    uno => b,
+    reg_dataout => RAM_out,
     lit => ROM_out(35 downto 20),
     sel_mux => sel_B,
     output => outmux_b

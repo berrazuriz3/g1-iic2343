@@ -75,7 +75,7 @@ with sop select
       '0' when others;
 
 with alu_result select
- z <= '1' when "00000000",
+ z <= '1' when "0000000000000000",
       '0' when others;
              
                

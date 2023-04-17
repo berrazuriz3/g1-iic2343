@@ -49,8 +49,8 @@ process (sel_mux, cero, uno, reg_dataout, lit) is
  
     case sel_mux is
         when "00" => output <= cero;      --0
-        when "01" => output <= reg_dataout;   --B
-        when "10" => output <= uno;       --Mem[Dir]
+        when "01" => output <= uno;   --B
+        when "10" => output <= reg_dataout;       --Mem[Dir]
         when "11" => output <= lit;      --literal
     end case;
 end process;
