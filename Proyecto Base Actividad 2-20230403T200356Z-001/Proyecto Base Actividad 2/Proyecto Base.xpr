@@ -217,6 +217,7 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sim_2/new/tb_ControlUnit.vhd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>

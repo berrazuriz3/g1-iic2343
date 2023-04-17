@@ -27,8 +27,7 @@ with speed select
     clock_divide_max <= full_max    when "00",
                         fast_max    when "01",
                         normal_max  when "10",
-                        slow_max    when "11",
-                        normal_max  when others;
+                        slow_max    when "11";
                         
 clock_divide : process (clk)
     begin

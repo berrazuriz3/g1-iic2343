@@ -52,7 +52,6 @@ process (sel_mux, cero, uno, reg_dataout, lit) is
         when "01" => output <= uno;   --B
         when "10" => output <= reg_dataout;       --Mem[Dir]
         when "11" => output <= lit;      --literal
-        when others => output <= cero;
     end case;
 end process;
 

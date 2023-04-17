@@ -1,0 +1,580 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Apr 17 00:22:15 2023
+# Process ID: 25016
+# Current directory: C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.runs/synth_1
+# Command line: vivado.exe -log Basys3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Basys3.tcl
+# Log file: C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.runs/synth_1/Basys3.vds
+# Journal file: C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Basys3.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 426.242 ; gain = 128.422
+Command: synth_design -top Basys3 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11064 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 949.570 ; gain = 234.609
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Basys3' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:16]
+INFO: [Synth 8-3491] module 'Clock_Divider' declared at 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Clock_Divider.vhd:7' bound to instance 'inst_Clock_Divider' of component 'Clock_Divider' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:203]
+INFO: [Synth 8-638] synthesizing module 'Clock_Divider' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Clock_Divider.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Clock_Divider' (1#1) [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Clock_Divider.vhd:13]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Reg.vhd:7' bound to instance 'inst_REG_A' of component 'Reg' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:209]
+INFO: [Synth 8-638] synthesizing module 'Reg' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Reg.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'Reg' (2#1) [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Reg.vhd:17]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Reg.vhd:7' bound to instance 'inst_REG_B' of component 'Reg' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:219]
+INFO: [Synth 8-3491] module 'ALU' declared at 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/ALU.vhd:4' bound to instance 'inst_ALU' of component 'ALU' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:229]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/ALU.vhd:14]
+INFO: [Synth 8-3491] module 'Adder8' declared at 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Adder8.vhd:5' bound to instance 'Adder' of component 'Adder8' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/ALU.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'Adder8' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Adder8.vhd:13]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/FA.vhd:4' bound to instance 'inst_FA0' of component 'FA' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Adder8.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'FA' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/FA.vhd:12]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/HA.vhd:5' bound to instance 'inst_HA' of component 'HA' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/FA.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'HA' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/HA.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'HA' (3#1) [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/HA.vhd:12]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/HA.vhd:5' bound to instance 'inst_HA2' of component 'HA' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/FA.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'FA' (4#1) [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/FA.vhd:12]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/FA.vhd:4' bound to instance 'inst_FA1' of component 'FA' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Adder8.vhd:35]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/FA.vhd:4' bound to instance 'inst_FA2' of component 'FA' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Adder8.vhd:43]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/FA.vhd:4' bound to instance 'inst_FA3' of component 'FA' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Adder8.vhd:51]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/FA.vhd:4' bound to instance 'inst_FA4' of component 'FA' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Adder8.vhd:59]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/FA.vhd:4' bound to instance 'inst_FA5' of component 'FA' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Adder8.vhd:67]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/FA.vhd:4' bound to instance 'inst_FA6' of component 'FA' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Adder8.vhd:75]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/FA.vhd:4' bound to instance 'inst_FA7' of component 'FA' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Adder8.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'Adder8' (5#1) [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Adder8.vhd:13]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 16 wide and choice expression is 8 wide [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/ALU.vhd:78]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (6#1) [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/ALU.vhd:14]
+INFO: [Synth 8-3491] module 'Display_Controller' declared at 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Display_Controller.vhd:7' bound to instance 'inst_Display_Controller' of component 'Display_Controller' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+INFO: [Synth 8-638] synthesizing module 'Display_Controller' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Display_Controller.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'Display_Controller' (7#1) [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Display_Controller.vhd:19]
+INFO: [Synth 8-3491] module 'MUX' declared at 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/MUX.vhd:34' bound to instance 'inst_MUX_A' of component 'MUX' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:250]
+INFO: [Synth 8-638] synthesizing module 'MUX' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/MUX.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'MUX' (8#1) [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/MUX.vhd:43]
+INFO: [Synth 8-3491] module 'MUX' declared at 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/MUX.vhd:34' bound to instance 'inst_MUX_B' of component 'MUX' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:259]
+INFO: [Synth 8-3491] module 'Status' declared at 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Status.vhd:5' bound to instance 'inst_Status' of component 'Status' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:268]
+INFO: [Synth 8-638] synthesizing module 'Status' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Status.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Status' (9#1) [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Status.vhd:14]
+INFO: [Synth 8-3491] module 'PC' declared at 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/PC.vhd:7' bound to instance 'inst_PC' of component 'PC' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:277]
+INFO: [Synth 8-638] synthesizing module 'PC' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/PC.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'PC' (10#1) [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/PC.vhd:17]
+INFO: [Synth 8-3491] module 'ControlUnit' declared at 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/ControlUnit.vhd:34' bound to instance 'inst_ControlUnit' of component 'ControlUnit' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:287]
+INFO: [Synth 8-638] synthesizing module 'ControlUnit' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/ControlUnit.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'ControlUnit' (11#1) [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/ControlUnit.vhd:46]
+INFO: [Synth 8-3491] module 'ROM' declared at 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/ROM.vhd:14' bound to instance 'inst_ROM' of component 'ROM' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:298]
+INFO: [Synth 8-638] synthesizing module 'ROM' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/ROM.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'ROM' (12#1) [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/ROM.vhd:23]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:6' bound to instance 'inst_Debouncer0' of component 'Debouncer' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:309]
+INFO: [Synth 8-638] synthesizing module 'Debouncer' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'Debouncer' (13#1) [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:12]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:6' bound to instance 'inst_Debouncer1' of component 'Debouncer' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:310]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:6' bound to instance 'inst_Debouncer2' of component 'Debouncer' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:311]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:6' bound to instance 'inst_Debouncer3' of component 'Debouncer' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:312]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:6' bound to instance 'inst_Debouncer4' of component 'Debouncer' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:313]
+WARNING: [Synth 8-3848] Net led in module/entity Basys3 does not have driver. [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 with 1st driver pin 'Basys3:/inst_REG_A/dataout[5]' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 with 2nd driver pin 'GND' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 with 1st driver pin 'Basys3:/inst_REG_A/dataout[6]' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 with 2nd driver pin 'GND' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 with 1st driver pin 'Basys3:/inst_REG_A/dataout[7]' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 with 2nd driver pin 'GND' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 with 1st driver pin 'Basys3:/inst_REG_A/dataout[1]' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 with 2nd driver pin 'GND' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 with 1st driver pin 'Basys3:/inst_REG_A/dataout[2]' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 with 2nd driver pin 'GND' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 with 1st driver pin 'Basys3:/inst_REG_A/dataout[3]' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 with 2nd driver pin 'GND' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 with 1st driver pin 'Basys3:/inst_REG_B/dataout[5]' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 with 2nd driver pin 'GND' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 with 1st driver pin 'Basys3:/inst_REG_B/dataout[6]' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 with 2nd driver pin 'GND' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 with 1st driver pin 'Basys3:/inst_REG_B/dataout[7]' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 with 2nd driver pin 'GND' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 with 1st driver pin 'Basys3:/inst_REG_B/dataout[1]' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 with 2nd driver pin 'GND' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 with 1st driver pin 'Basys3:/inst_REG_B/dataout[2]' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 with 2nd driver pin 'GND' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 with 1st driver pin 'Basys3:/inst_REG_B/dataout[3]' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 with 2nd driver pin 'GND' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd-240.0 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:240]
+WARNING: [Synth 8-3848] Net clear in module/entity Basys3 does not have driver. [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:136]
+WARNING: [Synth 8-3848] Net datain in module/entity Basys3 does not have driver. [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:162]
+WARNING: [Synth 8-3848] Net ROM_datain in module/entity Basys3 does not have driver. [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:142]
+INFO: [Synth 8-256] done synthesizing module 'Basys3' (14#1) [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:16]
+WARNING: [Synth 8-3331] design ControlUnit has unconnected port CZN[2]
+WARNING: [Synth 8-3331] design ControlUnit has unconnected port CZN[0]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port s[15]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port s[14]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port s[13]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port s[12]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port s[11]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port s[10]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port s[9]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port s[8]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port a[15]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port a[14]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port a[13]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port a[12]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port a[11]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port a[10]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port a[9]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port a[8]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port b[15]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port b[14]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port b[13]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port b[12]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port b[11]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port b[10]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port b[9]
+WARNING: [Synth 8-3331] design Adder8 has unconnected port b[8]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[15]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[14]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[13]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[12]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[11]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[10]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[9]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[8]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[7]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[6]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[5]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[4]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[3]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[2]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[1]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[0]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[15]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[14]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[13]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[12]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[11]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[10]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[8]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[7]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[6]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[5]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[4]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[3]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[2]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[1]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1023.191 ; gain = 308.230
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1023.191 ; gain = 308.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1023.191 ; gain = 308.230
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1023.191 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/constrs_1/new/Basys3.xdc]
+Finished Parsing XDC File [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/constrs_1/new/Basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/constrs_1/new/Basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Basys3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Basys3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1138.637 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1138.637 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1138.637 ; gain = 423.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1138.637 ; gain = 423.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1138.637 ; gain = 423.676
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Componentes/Reg.vhd:28]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/PC.vhd:28]
+INFO: [Synth 8-5546] ROM "enableA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "enableB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "selA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "selB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "selALU" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1138.637 ; gain = 423.676
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 21    
++---Registers : 
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 1     
+	   4 Input     27 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	  60 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	  60 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 17    
+	   5 Input      1 Bit        Muxes := 1     
+	  60 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Basys3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Clock_Divider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     27 Bit        Muxes := 1     
+Module Reg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module HA 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Display_Controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+Module MUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+Module Status 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module ControlUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	  60 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	  60 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	  60 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module ROM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 1     
+Module Debouncer 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[15]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[14]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[13]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[12]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[11]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[10]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[9]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[8]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[7]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[6]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[5]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[4]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[3]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[2]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[1]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[0]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[15]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[14]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[13]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[12]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[11]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[10]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[8]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[7]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[6]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[5]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[4]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[3]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[2]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[1]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[0]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin p_1_out with 1st driver pin 'i_0/inst_ControlUnit/i_0/O'
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin p_1_out with 2nd driver pin 'GND'
+CRITICAL WARNING: [Synth 8-6858] multi-driven net p_1_out is connected to at least one constant driver which has been preserved, other driver is ignored
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin p_1_out with 1st driver pin 'i_0/inst_ControlUnit/i_23/O'
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin p_1_out with 2nd driver pin 'GND'
+CRITICAL WARNING: [Synth 8-6858] multi-driven net p_1_out is connected to at least one constant driver which has been preserved, other driver is ignored
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin p_2_out with 1st driver pin 'i_0/inst_ControlUnit/i_93/O' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/ControlUnit.vhd:302]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin p_2_out with 2nd driver pin 'GND' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/ControlUnit.vhd:302]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net p_2_out is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/ControlUnit.vhd:302]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dis_a_reg with 1st driver pin 'i_0/dis_a_inferredi_99/O' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:178]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dis_a_reg with 2nd driver pin 'GND' [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:178]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net dis_a_reg is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sources_1/new/Basys3.vhd:178]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 1138.637 ; gain = 423.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+-------------------------+---------------+----------------+
+|Module Name | RTL Object              | Depth x Width | Implemented As | 
++------------+-------------------------+---------------+----------------+
+|Basys3      | inst_ControlUnit/selALU | 64x3          | LUT            | 
++------------+-------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1138.637 ; gain = 423.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1138.637 ; gain = 423.676
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1138.637 ; gain = 423.676
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 1138.637 ; gain = 423.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 1138.637 ; gain = 423.676
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 1138.637 ; gain = 423.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 1138.637 ; gain = 423.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 1138.637 ; gain = 423.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 1138.637 ; gain = 423.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     5|
+|3     |LUT1   |     1|
+|4     |LUT2   |     4|
+|5     |LUT4   |     1|
+|6     |LUT5   |     1|
+|7     |LUT6   |     2|
+|8     |FDRE   |    19|
+|9     |IBUF   |     1|
+|10    |OBUF   |    12|
+|11    |OBUFT  |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------------+-------------------+------+
+|      |Instance                  |Module             |Cells |
++------+--------------------------+-------------------+------+
+|1     |top                       |                   |    63|
+|2     |  inst_Display_Controller |Display_Controller |    33|
++------+--------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 1138.637 ; gain = 423.676
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 12 critical warnings and 32 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:50 . Memory (MB): peak = 1138.637 ; gain = 308.230
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 1138.637 ; gain = 423.676
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1138.848 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1148.684 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+74 Infos, 95 Warnings, 48 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:00 ; elapsed = 00:01:10 . Memory (MB): peak = 1148.684 ; gain = 722.441
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1148.684 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.runs/synth_1/Basys3.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Basys3_utilization_synth.rpt -pb Basys3_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 17 00:23:43 2023...

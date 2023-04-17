@@ -43,15 +43,13 @@ with display select
     an <=       "0111" when "00",
                 "1011" when "01",
                 "1101" when "10",
-                "1110" when "11",
-                 "0111" when others;
+                "1110" when "11";
           
 with display select
     number <=   dis_a when "00",
                 dis_b when "01",
                 dis_c when "10",
-                dis_d when "11",
-                 dis_a when others;
+                dis_d when "11";
    
 with number select
     seg <=      "11000000" when "0000",
@@ -69,7 +67,6 @@ with number select
                 "11000110" when "1100",
                 "10100001" when "1101",
                 "10000110" when "1110",
-                "10001110" when "1111",
-                "11000000" when others;
+                "10001110" when "1111";
             
 end Behavioral;
