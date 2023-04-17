@@ -155,6 +155,9 @@ signal enable_A         : std_logic;
 signal enable_B         : std_logic;
 signal sel_ALU          : std_logic_vector(2 downto 0);
 signal result           : std_logic_vector(15 downto 0);  -- Señales del resultado.
+signal dataout_reg_a    : std_logic_vector(15 downto 0);  -- Señales del primer operador.    
+signal dataout_reg_b    : std_logic_vector(15 downto 0);  -- Señales del segundo operador.
+signal dis              : std_logic_vector(15 downto 0);
 
 signal datain           : std_logic_vector(15 downto 0);  -- Señales de datos de entrada a los registros.
 
@@ -166,9 +169,9 @@ begin
 -- Inicio de declaración de comportamientos.
 
 -- Muxer Regs
-with sw(12) select
-    datain <= result            when '0',
-              sw(15 downto 0)    when others;
+--with sw(12) select
+    --datain <= result            when '0',
+              --sw(15 downto 0)    when others;
 
 -- Muxers del Display
 with btn(0) select
@@ -187,6 +190,13 @@ with btn(0) select
     dis_d <= b(3 downto 0)      when '0',
              result(3 downto 0) when others;
 
+dis(15 downto 8) <= a(7 downto 0);
+dis(7 downto 0) <= b(7 downto 0);
+
+dis_a  <= dis(15 downto 12);
+dis_b  <= dis(11 downto 8);
+dis_c  <= dis(7 downto 4);
+dis_d  <= dis(3 downto 0);
 
 -- Inicio de declaración de instancias.
 
@@ -197,7 +207,7 @@ inst_Clock_Divider: Clock_Divider port map(
     );
 
 inst_REG_A: Reg port map( -- Repárame!
-    clock       => clock,
+    clock       => d_btn(3),
     clear       => clear,
     load        => '1',
     up          => '0',
@@ -207,7 +217,7 @@ inst_REG_A: Reg port map( -- Repárame!
     );
     
 inst_REG_B: Reg port map( -- Repárame!
-    clock       => clock,
+    clock       => d_btn(3),
     clear       => clear,
     load        => '1',
     up          => '0',
@@ -217,9 +227,9 @@ inst_REG_B: Reg port map( -- Repárame!
     );
  
  inst_ALU: ALU port map(
-    a           => a,
-    b           => b,
-    sop         => sw(15 downto 13),
+    a           => outmux_a,
+    b           => outmux_b,
+    sop         => sel_ALU,
     c           => c,
     z           => z,
     n           => n,
@@ -251,7 +261,7 @@ inst_MUX_B: MUX port map(
     uno => "0000000000000001",
     reg_dataout => b,
     lit => ROM_out(35 downto 20),
-    sel_mux => sel_A,
+    sel_mux => sel_B,
     output => outmux_a
     );
     
@@ -260,12 +270,12 @@ inst_Status: Status port map(
     Z => z,
     N => n,
     clear => clear,
-    clock => clock,
+    clock => d_btn(3),
     status_out => s_status_out
     );
     
 inst_PC: PC port map(
-    clock       => clock,
+    clock       => d_btn(3),
     count_in    => ROM_out(31 downto 20),
     load_pc      => loadPC,
     up          => '1',
@@ -286,9 +296,9 @@ inst_ControlUnit: ControlUnit port map(
     );
     
 inst_ROM: ROM port map(
-    clock         => clock,
+    clock         => d_btn(3),
     disable     => clear,
-    write       => write_rom,
+    write       => '1',
     address     => ROM_address,
     dataout     => ROM_out,
     DataIn      => ROM_datain
