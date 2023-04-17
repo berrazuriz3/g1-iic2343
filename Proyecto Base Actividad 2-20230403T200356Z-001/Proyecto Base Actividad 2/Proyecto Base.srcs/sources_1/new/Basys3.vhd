@@ -210,7 +210,7 @@ inst_REG_A: Reg port map( -- Repárame!
     load        => enable_A,
     up          => '0',
     down        => '0',
-    datain      => datain,
+    datain      => result,
     dataout     => a
     );
     
@@ -220,7 +220,7 @@ inst_REG_B: Reg port map( -- Repárame!
     load        => enable_B,
     up          => '0',
     down        => '0',
-    datain      => datain,
+    datain      => result,
     dataout     => b
     );
  
@@ -249,7 +249,7 @@ inst_MUX_A: MUX port map(
     cero => "0000000000000000",
     uno => "0000000000000001",
     reg_dataout => a,
-    lit => "0000000000000000",
+    lit => lit,
     sel_mux => sel_A,
     output => outmux_a
     );
@@ -274,7 +274,7 @@ inst_Status: Status port map(
     
 inst_PC: PC port map(
     clock       => clock,
-    count_in    => "000000000000",
+    count_in    => ROM_out(31 downto 20),
     load_pc      => loadPC,
     up          => '1',
     down        => '0',

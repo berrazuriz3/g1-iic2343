@@ -22,7 +22,7 @@ reg_prosses : process (clock, clear)        -- Proceso sensible a clock y clear.
           if (clear = '1') then             -- Si clear = 1
             status <= (others => '0');         -- Carga 0 en el registro.
           elsif (rising_edge(clock)) then   -- Si flanco de subida de clock.
-            status <= c & z & n;                 
+            status <= C & Z & N;                 
             end if;
         end process;
         
