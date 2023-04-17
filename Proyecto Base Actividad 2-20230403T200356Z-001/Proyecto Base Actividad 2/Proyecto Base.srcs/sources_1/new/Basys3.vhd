@@ -174,21 +174,21 @@ begin
               --sw(15 downto 0)    when others;
 
 -- Muxers del Display
-with btn(0) select
-    dis_a <= a(7 downto 4)      when '0',
-             "0000"             when others;
+with sel_ALU select
+    dis_a <= "0000"      when "000",
+             "0001"             when others;
                      
-with btn(0) select
-    dis_b <= a(3 downto 0)      when '0',
-             "0000"             when others;
+with enable_B select
+    dis_b <= "0000"      when '0',
+             "0001"             when others;
 
-with btn(0) select
-    dis_c <= b(7 downto 4)      when '0',
-             result(7 downto 4) when others;
+with enable_A select
+    dis_c <= "0001"      when '1',
+             "0000" when others;
                 
-with btn(0) select
-    dis_d <= b(3 downto 0)      when '0',
-             result(3 downto 0) when others;
+with loadPC select
+    dis_d <= "0000"      when '0',
+             "0001" when others;
 
 dis(15 downto 8) <= a(7 downto 0);
 dis(7 downto 0) <= b(7 downto 0);
@@ -207,9 +207,9 @@ inst_Clock_Divider: Clock_Divider port map(
     );
 
 inst_REG_A: Reg port map( -- Repárame!
-    clock       => d_btn(3),
+    clock       => clock,
     clear       => clear,
-    load        => '1',
+    load        => enable_A,
     up          => '0',
     down        => '0',
     datain      => datain,
@@ -217,9 +217,9 @@ inst_REG_A: Reg port map( -- Repárame!
     );
     
 inst_REG_B: Reg port map( -- Repárame!
-    clock       => d_btn(3),
+    clock       => clock,
     clear       => clear,
-    load        => '1',
+    load        => enable_B,
     up          => '0',
     down        => '0',
     datain      => datain,
@@ -251,7 +251,7 @@ inst_MUX_A: MUX port map(
     cero => "0000000000000000",
     uno => "0000000000000001",
     reg_dataout => a,
-    lit => lit,
+    lit => "0000000000000000",
     sel_mux => sel_A,
     output => outmux_a
     );
@@ -262,7 +262,7 @@ inst_MUX_B: MUX port map(
     reg_dataout => b,
     lit => ROM_out(35 downto 20),
     sel_mux => sel_B,
-    output => outmux_a
+    output => outmux_b
     );
     
 inst_Status: Status port map(
@@ -270,13 +270,13 @@ inst_Status: Status port map(
     Z => z,
     N => n,
     clear => clear,
-    clock => d_btn(3),
+    clock => clock,
     status_out => s_status_out
     );
     
 inst_PC: PC port map(
-    clock       => d_btn(3),
-    count_in    => ROM_out(31 downto 20),
+    clock       => clock,
+    count_in    => "000000000000",
     load_pc      => loadPC,
     up          => '1',
     down        => '0',
@@ -296,7 +296,7 @@ inst_ControlUnit: ControlUnit port map(
     );
     
 inst_ROM: ROM port map(
-    clock         => d_btn(3),
+    clock         => clock,
     disable     => clear,
     write       => '1',
     address     => ROM_address,
