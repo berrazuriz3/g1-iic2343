@@ -20,7 +20,7 @@ component FA
            co : out std_logic);
     end component;
 
-signal c : std_logic_vector(6 downto 0);
+signal c : std_logic_vector(14 downto 0);
 
 begin
 
@@ -85,7 +85,71 @@ inst_FA7: FA port map(
         b      =>b(7),
         ci     =>c(6),
         s      =>s(7),
-        co     =>co
+        co     =>c(7)
     );
     
+inst_FA8: FA port map(
+        a      =>a(8),
+        b      =>b(8),
+        ci     =>c(7),
+        s      =>s(8),
+        co     =>c(8)
+    );
+
+inst_FA9: FA port map(
+        a      =>a(9),
+        b      =>b(9),
+        ci     =>c(8),
+        s      =>s(9),
+        co     =>c(9)
+    );
+
+inst_FA10: FA port map(
+        a      =>a(10),
+        b      =>b(10),
+        ci     =>c(9),
+        s      =>s(10),
+        co     =>c(10)
+    );
+
+inst_FA11: FA port map(
+        a      =>a(11),
+        b      =>b(11),
+        ci     =>c(10),
+        s      =>s(11),
+        co     =>c(11)
+    );
+
+inst_FA12: FA port map(
+        a      =>a(12),
+        b      =>b(12),
+        ci     =>c(11),
+        s      =>s(12),
+        co     =>c(12)
+    );
+
+inst_FA13: FA port map(
+        a      =>a(13),
+        b      =>b(13),
+        ci     =>c(12),
+        s      =>s(13),
+        co     =>c(13)
+    );
+
+inst_FA14: FA port map(
+        a      =>a(14),
+        b      =>b(14),
+        ci     =>c(13),
+        s      =>s(14),
+        co     =>c(14)
+    );
+
+inst_FA15: FA port map(
+        a      =>a(15),
+        b      =>b(15),
+        ci     =>c(14),
+        s      =>s(15),
+        co     =>co
+    );
+
 end Behavioral;

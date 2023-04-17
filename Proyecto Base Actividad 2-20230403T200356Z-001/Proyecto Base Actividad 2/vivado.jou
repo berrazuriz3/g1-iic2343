@@ -1,58 +1,139 @@
 #-----------------------------------------------------------
-# Vivado v2019.2 (64-bit)
-# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
-# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Sun Apr 16 23:05:42 2023
-# Process ID: 2328
-# Current directory: C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16756 C:\Users\borja\OneDrive\Escritorio\g1-iic2343\Proyecto Base Actividad 2-20230403T200356Z-001\Proyecto Base Actividad 2\Proyecto Base.xpr
-# Log file: C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/vivado.log
-# Journal file: C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2\vivado.jou
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Apr 17 10:31:19 2023
+# Process ID: 18668
+# Current directory: C:/Users/alfre/Desktop/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9468 C:\Users\alfre\Desktop\g1-iic2343\Proyecto Base Actividad 2-20230403T200356Z-001\Proyecto Base Actividad 2\Proyecto Base.xpr
+# Log file: C:/Users/alfre/Desktop/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/vivado.log
+# Journal file: C:/Users/alfre/Desktop/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2\vivado.jou
+# Running On: ASUS-ALF, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 16541 MB
 #-----------------------------------------------------------
 start_gui
-open_project {C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.xpr}
+open_project {C:/Users/alfre/Desktop/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.xpr}
 update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.runs/impl_1/Basys3.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.runs/impl_1/Basys3.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/borja/OneDrive/Escritorio/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.runs/impl_1/Basys3.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_ControlUnit.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_ControlUnit.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_ControlUnit.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_ControlUnit.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_ControlUnit.tcl
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 100 ns
+restart
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run all
+restart
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_ControlUnit.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_ControlUnit.tcl
+add_bp {C:/Users/alfre/Desktop/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sim_2/new/tb_ControlUnit.vhd} 277
+remove_bps -file {C:/Users/alfre/Desktop/g1-iic2343/Proyecto Base Actividad 2-20230403T200356Z-001/Proyecto Base Actividad 2/Proyecto Base.srcs/sim_2/new/tb_ControlUnit.vhd} -line 277
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_ControlUnit.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_ControlUnit.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_ControlUnit.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_ControlUnit.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_ControlUnit.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_ControlUnit.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_ControlUnit.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_ControlUnit.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_ControlUnit.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_ControlUnit.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_ControlUnit.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_ControlUnit.tcl
+run 10 ns
+restart
+run 10 ns
+run 10 ns
+run all
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_ControlUnit.tcl
+step
+step
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_ControlUnit.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_ControlUnit.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_ControlUnit.tcl

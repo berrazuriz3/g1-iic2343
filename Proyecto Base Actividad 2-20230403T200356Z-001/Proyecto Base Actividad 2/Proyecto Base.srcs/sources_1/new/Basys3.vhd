@@ -311,8 +311,6 @@ inst_Debouncer3: Debouncer port map( clk => clk, signal_in => btn(3), signal_out
 inst_Debouncer4: Debouncer port map( clk => clk, signal_in => btn(4), signal_out => d_btn(4) );
 
 
-
-
 -- Fin de declaración de instancias.
 
 -- Fin de declaración de comportamientos.

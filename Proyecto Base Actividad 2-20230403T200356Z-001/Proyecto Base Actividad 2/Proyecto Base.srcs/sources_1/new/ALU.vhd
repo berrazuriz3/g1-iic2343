@@ -57,7 +57,8 @@ with sop select
                   a xor b          when "100", --xor
                   not a            when "101", --not
                   '0' & a(15 downto 1) when "110", --shr
-                  a(14 downto 0) & '0' when "111"; --shl
+                  a(14 downto 0) & '0' when "111", --shl
+                  adder_result when others;
                   
 result  <= alu_result;
 
