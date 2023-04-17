@@ -4,6 +4,8 @@ Para la ROM dataout se trabajó con palabras binarias de 36 bits, de los cuales 
 
 En cuanto al Status, tendrá una salida binaria de 3 bits, donde el bit más significativo será el valor de C, el siguiente será el valor de Z y el menos significativo corresponderá a N.
 
+El equipo lo componen Borja Errázuriz, quién participo principalmente en la creación de los componentes y las instancias, Felipe Abarca, quién se encargo del diseño de la control Unit y debugging, y Alfredo Enrione, quién se encargo principalmente del debugging. 
+
 ## Tabla de instrucciones implementadas
 
 ### Operacion MOV
